@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yenno_B</title>
+  <meta name="description" content="Portf&oacute;lio pessoal de yenno_B. Desenvolvedor de 17 anos focado em Game Development e Intelig&ecirc;ncia Artificial local.">
+  <meta name="theme-color" content="#090a0f">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow top-left"></div>
+  <div class="ambient-glow center-right"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Main Container -->
+  <div class="wrapper">
+
+    <!-- Top Navigation / Status bar -->
+    <header class="navbar">
+      <div class="nav-brand">
+        <span class="brand-sym">&lambda;</span>
+        <span class="brand-text">yenno_b<span class="cursor-blink">_</span></span>
+      </div>
+      <div class="nav-status">
+        <span class="status-indicator"></span>
+        <span class="status-text">building real stuff</span>
+      </div>
+    </header>
+
+    <!-- Hero / Profile Card (guns.lol inspired clean elevation) -->
+    <section class="hero-section">
+      <div class="profile-card">
+        <div class="profile-header-banner"></div>
+        
+        <div class="profile-body">
+          <div class="avatar-container">
+            <div class="avatar-glow"></div>
+            <img src="avatar.png" alt="yenno_B Profile" class="avatar-img" id="profile-img">
+            <div class="avatar-badge" title="Status: Online &amp; Coding">
+              <span class="pulse-ring"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="profile-info">
+            <div class="name-row">
+              <h1 class="profile-name">yenno_B</h1>
+              <span class="badge dev-badge" title="Verified Independent Developer">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/></svg>
+                dev
+              </span>
+              <span class="badge age-badge">17 y/o</span>
+            </div>
+            
+            <p class="profile-tagline">
+              Programador independente focado na cria&ccedil;&atilde;o de jogos envolventes e sistemas de IA local. N&atilde;o &eacute; uma p&aacute;gina comercial, apenas c&oacute;digo com alma, utilidade e prop&oacute;sito real.
+            </p>
+
+            <!-- Focus Badges -->
+            <div class="focus-pills">
+              <div class="focus-pill primary" title="Área de foco primária">
+                <span class="pill-icon">&#127918;</span>
+                <div class="pill-text">
+                  <span class="pill-title">Game Development</span>
+                  <span class="pill-sub">Foco Principal (Roguelike, Mec&acirc;nicas &amp; F&iacute;sica)</span>
+                </div>
+              </div>
+              <div class="focus-pill secondary" title="Área de estudo e criação complementar">
+                <span class="pill-icon">&#129504;</span>
+                <div class="pill-text">
+                  <span class="pill-title">Intelig&ecirc;ncia Artificial</span>
+                  <span class="pill-sub">&Aacute;rea Secund&aacute;ria (Local, Voz &amp; Overlays)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="action-buttons">
+              <button class="btn btn-primary" id="copy-discord-btn" data-clipboard="yenno_b">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+                <span>Copiar Discord</span>
+              </button>
+
+              <a href="#projects" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+                <span>Explorar Projetos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal Inspector (Inspired by developer shell & minimal portfolio) -->
+    <section class="terminal-section">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="dot-btn red" title="Minimizar"></span>
+            <span class="dot-btn yellow" title="Alternar saídas"></span>
+            <span class="dot-btn green" title="Status da sessão"></span>
+          </div>
+          <div class="terminal-title">guest@yenno-desktop:~ (zsh)</div>
+          <div class="terminal-status">&#9679; ONLINE &bull; 2026</div>
+        </div>
+
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt">$</span> <span class="cmd">whoami</span>
+          </div>
+          <div class="terminal-response highlight-green">
+            yenno_b
+          </div>
+
+          <div class="terminal-line">
+            <span class="prompt">$</span> <span class="cmd">cat role.txt</span>
+          </div>
+          <div class="terminal-response">
+            <span class="text-blue">game developer</span> &bull; <span class="text-yellow">local ai systems</span>
+          </div>
+
+          <div class="terminal-line">
+            <span class="prompt">$</span> <span class="cmd">ls projects/</span>
+          </div>
+          <div class="terminal-response tech-list">
+            <span class="text-yellow">m-y-o.git</span>
+            <span class="text-yellow">rafael.git</span>
+            <span class="text-blue">plague-purgatory.git</span>
+          </div>
+          
+          <div class="terminal-line cursor-line">
+            <span class="prompt">$</span> <span class="cmd typing-cursor">scroll</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack / Skills Showcase -->
+    <section class="section-block" id="skills">
+      <div class="section-header">
+        <div class="section-tag">// SKILLS &amp; STACK</div>
+        <h2 class="section-title">Linguagens &amp; Tecnologias</h2>
+        <p class="section-subtitle">Linguagens dominadas, n&iacute;vel intermedi&aacute;rio e tecnologias em processo cont&iacute;nuo de aprendizado.</p>
+      </div>
+
+      <!-- Languages & Technologies Grid -->
+      <div class="skills-grid">
+        
+        <!-- Python (Dominada) -->
+        <div class="skill-card mastered">
+          <div class="skill-top">
+            <div class="skill-icon py-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.008 2.75h5.816v.825H3.92s-3.92-.444-3.92 5.586c0 6.03 3.42 5.81 3.42 5.81h2.04v-2.887s-.11-3.447 3.39-3.447h5.84s3.28.054 3.28-3.23V2.656S18.42 0 11.914 0zm-3.32 1.707a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1zm3.492 22.293c6.094 0 5.714-2.656 5.714-2.656l-.008-2.75h-5.816v-.825h8.104s3.92.444 3.92-5.586c0-6.03-3.42-5.81-3.42-5.81h-2.04v2.887s.11 3.447-3.39 3.447H8.65s-3.28-.054-3.28 3.23v5.407S5.406 24 11.914 24zm3.32-1.707a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z"/>
+              </svg>
+            </div>
+            <span class="skill-level-badge mastered">Dominada</span>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Automa&ccedil;&otilde;es de sistema operacional, pipelines de IA local, orquestra&ccedil;&atilde;o de modelos (Gemma 2), processamento de &aacute;udio e overlays.</p>
+          </div>
+          <div class="skill-footer">
+            <span class="tag">AI &amp; Automa&ccedil;&atilde;o</span>
+            <span class="tag">LLM Local</span>
+          </div>
+        </div>
+
+        <!-- Lua (Dominada) -->
+        <div class="skill-card mastered">
+          <div class="skill-top">
+            <div class="skill-icon lua-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="19" cy="5" r="2.5"/>
+              </svg>
+            </div>
+            <span class="skill-level-badge mastered">Dominada</span>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Lua</h3>
+            <p class="skill-desc">Scripting de jogos, motores leves, rotinas de intelig&ecirc;ncia artificial para entidades e regras din&acirc;micas de gameplay.</p>
+          </div>
+          <div class="skill-footer">
+            <span class="tag">Game Scripting</span>
+            <span class="tag">L&oacute;gica de Jogo</span>
+          </div>
+        </div>
+
+        <!-- C++ (Intermediário) -->
+        <div class="skill-card intermediate">
+          <div class="skill-top">
+            <div class="skill-icon cpp-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M22.39 10.95h-2.18v-2.18h-1.09v2.18h-2.18v1.09h2.18v2.18h1.09v-2.18h2.18v-1.09zm-8.73 0h-2.18v-2.18h-1.09v2.18H8.21v1.09h2.18v2.18h1.09v-2.18h2.18v-1.09zM7.22 17.06a7.2 7.2 0 1 1 0-10.12l1.55 1.55a5 5 0 1 0 0 7.02l-1.55 1.55z"/>
+              </svg>
+            </div>
+            <span class="skill-level-badge intermediate">Intermedi&aacute;rio</span>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">C++</h3>
+            <p class="skill-desc">Desenvolvimento orientado a performance: l&oacute;gica pesada de combate, loops r&aacute;pidos, no&ccedil;&otilde;es de gerenciamento de mem&oacute;ria e f&iacute;sica 2D.</p>
+          </div>
+          <div class="skill-footer">
+            <span class="tag">Game Dev</span>
+            <span class="tag">Intermedi&aacute;rio</span>
+          </div>
+        </div>
+
+        <!-- Node.js (Learning) -->
+        <div class="skill-card learning">
+          <div class="skill-top">
+            <div class="skill-icon node-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M12 2L3 7.2v10.4L12 23l9-5.4V7.2L12 2zm6.75 14.33L12 20.47l-6.75-4.14V8.47L12 4.33l6.75 4.14v7.86z"/>
+              </svg>
+            </div>
+            <span class="skill-level-badge learning">Learning</span>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Node.js</h3>
+            <p class="skill-desc">Estudando constru&ccedil;&atilde;o de servidores locais, automa&ccedil;&otilde;es ass&iacute;ncronas, webhooks e comunica&ccedil;&atilde;o via websockets em tempo real.</p>
+          </div>
+          <div class="skill-footer">
+            <span class="tag">Em Aprendizado</span>
+            <span class="tag">Backend</span>
+          </div>
+        </div>
+
+        <!-- HTML (Learning) -->
+        <div class="skill-card learning">
+          <div class="skill-top">
+            <div class="skill-icon html-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.234-2.625h11.203l.235-2.625H5.438l.656 7.875h9.797l-.375 4.172-3.563.984-3.562-.984-.235-2.625H5.516l.422 4.734 6.015 1.688 6.063-1.688.844-9.531H8.531z"/>
+              </svg>
+            </div>
+            <span class="skill-level-badge learning">Learning</span>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">HTML</h3>
+            <p class="skill-desc">Praticando estruturas sem&acirc;nticas limpas, interfaces responsivas, HUDs para webviews e layouts sem depend&ecirc;ncias pesadas.</p>
+          </div>
+          <div class="skill-footer">
+            <span class="tag">Em Aprendizado</span>
+            <span class="tag">Web &amp; UI</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Currently Learning / Expanding horizons -->
+      <div class="learning-banner">
+        <div class="learning-icon">
+          <span class="pulse-indicator"></span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+        <div class="learning-content">
+          <div class="learning-headline">
+            <span class="status-badge-learning">Em Aprendizado Ativo</span>
+            <h3>Expandindo o Repert&oacute;rio T&eacute;cnico</h3>
+          </div>
+          <p>
+            Em constante evolu&ccedil;&atilde;o. Al&eacute;m de aprofundar conhecimentos pr&aacute;ticos em <strong>Node.js</strong> e <strong>HTML</strong>, exploro ativamente linguagens como <strong>Rust</strong> e <strong>GLSL / Shaders</strong> para futuros projetos e engines.
+          </p>
+          <div class="learning-tags">
+            <span class="learn-pill">&#128640; Node.js &amp; HTML (Web)</span>
+            <span class="learn-pill">&#9889; Rust (Sistemas)</span>
+            <span class="learn-pill">&#127918; GLSL / Shaders</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section-block" id="projects">
+      <div class="section-header">
+        <div class="section-tag">// PROJETOS EM DESTAQUE</div>
+        <h2 class="section-title">O Que Eu Construo</h2>
+        <p class="section-subtitle">Projetos reais com foco em utilidade di&aacute;ria, IA local e din&acirc;micas de jogo fluidas.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: M Y O -->
+        <article class="project-card card-yellow">
+          <div class="project-header">
+            <div class="project-type-badge badge-yellow">
+              <span class="type-icon">&#129504;</span> Local AI &bull; Agente de Voz
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+
+          <h3 class="project-title">M Y O <span class="project-subtitle">&mdash; Memories of You</span></h3>
+          
+          <p class="project-description">
+            Companheira de voz local no estilo agente inteligente. O usu&aacute;rio conversa pelo microfone e recebe respostas flu&iacute;das em texto e voz sintetizada em tempo real.
+          </p>
+
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Mem&oacute;ria persistente de longo prazo:</strong> Armazenamento em arquivos locais estruturados para reter contexto e hist&oacute;rico entre sess&otilde;es.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Personalidade est&aacute;vel:</strong> Calibra&ccedil;&atilde;o cuidadosa de prompts locais garantindo comportamento previs&iacute;vel e sem quebra de personagem.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Integra&ccedil;&atilde;o VTube Studio:</strong> Gancho b&aacute;sico com o software para controle de express&otilde;es faciais e sincroniza&ccedil;&atilde;o labial durante a fala.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Gemma 2:2B</span>
+            <span class="tech-pill">ElevenLabs</span>
+            <span class="tech-pill">Speech Recognition</span>
+            <span class="tech-pill">VTube Studio Hook</span>
+            <span class="tech-pill">Python</span>
+          </div>
+        </article>
+
+        <!-- Project 2: Rafael -->
+        <article class="project-card card-yellow">
+          <div class="project-header">
+            <div class="project-type-badge badge-yellow">
+              <span class="type-icon">&#9889;</span> Local AI &bull; Desktop Utility
+            </div>
+            <span class="project-date">2026</span>
+          </div>
+
+          <h3 class="project-title">Rafael <span class="project-subtitle">&mdash; Windows Voice Overlay</span></h3>
+          
+          <p class="project-description">
+            Overlay de voz de alto desempenho para Windows. Escuta comandos no microfone, interpreta a inten&ccedil;&atilde;o e abre o que voc&ecirc; solicitou instantaneamente.
+          </p>
+
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Ferramenta de uso real:</strong> Projetado para produtividade acelerada no desktop di&aacute;rio, e n&atilde;o apenas um chatbot de entretenimento.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Overlay limpo e &aacute;gil:</strong> HUD minimalista na tela que confirma a a&ccedil;&atilde;o sem atrapalhar a sua &aacute;rea de trabalho.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Controle direto do sistema:</strong> Abertura de aplicativos, fluxos de trabalho e scripts customizados via voz natural.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Windows API</span>
+            <span class="tech-pill">Speech to Intent</span>
+            <span class="tech-pill">Desktop Automation</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Plague Purgatory -->
+        <article class="project-card card-blue featured-game">
+          <div class="project-header">
+            <div class="project-type-badge badge-blue">
+              <span class="type-icon">&#127918;</span> Game Dev &bull; Roguelike 2D
+            </div>
+            <span class="project-date">Em Dev</span>
+          </div>
+
+          <h3 class="project-title">Plague Purgatory <span class="project-subtitle">&mdash; Roguelike 2D</span></h3>
+          
+          <p class="project-description">
+            Jogo roguelike de a&ccedil;&atilde;o 2D sombrio e din&acirc;mico. Combate r&aacute;pido e desafiador, salas procedurais com diferentes layout de armadilhas, comportamento t&aacute;tico de hordas e foco em rejogabilidade.
+          </p>
+
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Mec&acirc;nicas de combate afiadas:</strong> Hitboxes r&iacute;gidas, esquivas r&aacute;pidas e sensa&ccedil;&atilde;o de impacto em cada ataque.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Gera&ccedil;&atilde;o procedural:</strong> Constru&ccedil;&atilde;o de masmorras e loot rand&ocirc;mico para tornar cada tentativa &uacute;nica.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="hl-bullet">&rtrif;</span>
+              <span><strong>Performance s&oacute;lida:</strong> L&oacute;gica central otimizada com C++ e Lua para taxas de quadros fluidas at&eacute; nos momentos mais ca&oacute;ticos.</span>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">C++</span>
+            <span class="tech-pill">Lua</span>
+            <span class="tech-pill">F&iacute;sica 2D</span>
+            <span class="tech-pill">Procedural Generation</span>
+            <span class="tech-pill">Pixel Art</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <span class="brand-sym">&lambda;</span> yenno_B
+        </div>
+        <p class="footer-sub">Portf&oacute;lio pessoal e independente de um desenvolvedor. Constru&iacute;do com HTML, CSS e JavaScript puro &mdash; sem frameworks pesados.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="contact-links">
+          <button class="footer-link-btn" id="footer-discord-btn" data-clipboard="yenno_b">
+            <span>Discord: <strong>yenno_b</strong></span>
+            <span class="copy-badge">copiar</span>
+          </button>
+        </div>
+        <div class="copyright">
+          &copy; 2026 yenno_B &bull; Carregamento instant&acirc;neo &bull; 0 depend&ecirc;ncias externas
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification for Copy -->
+  <div class="toast" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-msg">Discord copiado com sucesso!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
